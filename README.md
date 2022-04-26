@@ -17,6 +17,7 @@
 1. Navigate to folder when you would like to clone and Open git bash
 2. Run below command to clone project:
 git clone https://github.com/amuhak20/BackendQaAutomation.git
+3. Checkout to master branch. git checkout master
 
 NOTE: if clone does not work, download zip file
 
