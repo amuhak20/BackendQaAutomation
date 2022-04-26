@@ -1,0 +1,7 @@
+com\restapitests\common\BaseApiTest.class
+com\restapitests\tests\FlightsListTests.class
+com\restapitests\common\RestExecutor.class
+com\restapitests\tests\Hotels_SearchTests.class
+com\restapitests\tests\FlightsGetFaresCaledarTests.class
+com\restapitests\tests\HotelsLookupTests.class
+com\restapitests\listeners\ReportListener.class

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Backed QA API Tests">
+<listeners>
+	<listener class-name="com.restapitests.listeners.ReportListener" />
+</listeners>
+    <test name="Regression">
+         <classes>
+             <class name="com.restapitests.tests.FlightsListTests"/>
+             <class name="com.restapitests.tests.Hotels_SearchTests"/>
+             <class name="com.restapitests.tests.FlightsGetFaresCaledarTests"/>
+             <class name="com.restapitests.tests.HotelsLookupTests"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->

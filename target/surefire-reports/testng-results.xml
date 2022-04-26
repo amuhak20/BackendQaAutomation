@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Backed QA API Tests" duration-ms="12831" started-at="2022-04-26T20:23:02 IST" finished-at="2022-04-26T20:23:15 IST">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="12831" started-at="2022-04-26T20:23:02 IST" finished-at="2022-04-26T20:23:15 IST">
+      <class name="com.restapitests.tests.FlightsGetFaresCaledarTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.restapitests.tests.FlightsGetFaresCaledarTests@4e9ba398]" name="setup" is-config="true" duration-ms="915" started-at="2022-04-26T20:23:12 IST" finished-at="2022-04-26T20:23:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateResponseBody()[pri:0, instance:com.restapitests.tests.FlightsGetFaresCaledarTests@4e9ba398]" name="validateResponseBody" duration-ms="1" started-at="2022-04-26T20:23:13 IST" description="Validation of Response body of Get Fares Calendar API" finished-at="2022-04-26T20:23:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBody -->
+        <test-method status="PASS" signature="validateStatusCodes()[pri:0, instance:com.restapitests.tests.FlightsGetFaresCaledarTests@4e9ba398]" name="validateStatusCodes" duration-ms="3" started-at="2022-04-26T20:23:13 IST" description="Validation of Status codes of Get Fares Calendar API" finished-at="2022-04-26T20:23:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCodes -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.restapitests.tests.FlightsGetFaresCaledarTests@4e9ba398]" name="cleanUp" is-config="true" duration-ms="1" started-at="2022-04-26T20:23:13 IST" finished-at="2022-04-26T20:23:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.restapitests.tests.FlightsGetFaresCaledarTests -->
+      <class name="com.restapitests.tests.HotelsLookupTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.restapitests.tests.HotelsLookupTests@6d7b4f4c]" name="setup" is-config="true" duration-ms="1623" started-at="2022-04-26T20:23:13 IST" finished-at="2022-04-26T20:23:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateResponseBody()[pri:0, instance:com.restapitests.tests.HotelsLookupTests@6d7b4f4c]" name="validateResponseBody" duration-ms="79" started-at="2022-04-26T20:23:15 IST" description="Test case to validate response body" finished-at="2022-04-26T20:23:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBody -->
+        <test-method status="PASS" signature="validateStatusCodes()[pri:0, instance:com.restapitests.tests.HotelsLookupTests@6d7b4f4c]" name="validateStatusCodes" duration-ms="6" started-at="2022-04-26T20:23:15 IST" description="Test case to validate Status codes" finished-at="2022-04-26T20:23:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCodes -->
+        <test-method status="PASS" signature="cleanUP()[pri:0, instance:com.restapitests.tests.HotelsLookupTests@6d7b4f4c]" name="cleanUP" is-config="true" duration-ms="2" started-at="2022-04-26T20:23:15 IST" finished-at="2022-04-26T20:23:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUP -->
+      </class> <!-- com.restapitests.tests.HotelsLookupTests -->
+      <class name="com.restapitests.tests.Hotels_SearchTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="setup" is-config="true" duration-ms="1310" started-at="2022-04-26T20:23:08 IST" finished-at="2022-04-26T20:23:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateRequestBody()[pri:0, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="validateRequestBody" duration-ms="3" started-at="2022-04-26T20:23:10 IST" description="Test case to validate request body after POST Call" finished-at="2022-04-26T20:23:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRequestBody -->
+        <test-method status="PASS" signature="validateStatusCodeandLine()[pri:1, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="validateStatusCodeandLine" duration-ms="7" started-at="2022-04-26T20:23:10 IST" description="Test case to validate Status Code and Status Line" finished-at="2022-04-26T20:23:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCodeandLine -->
+        <test-method status="PASS" signature="validateHeaderResp()[pri:2, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="validateHeaderResp" duration-ms="10" started-at="2022-04-26T20:23:10 IST" description="Test case to validate Content Type and Server Name" finished-at="2022-04-26T20:23:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHeaderResp -->
+        <test-method status="PASS" signature="validateWithoutToken()[pri:3, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="validateWithoutToken" duration-ms="841" started-at="2022-04-26T20:23:10 IST" description="Test case to validate error code without token" finished-at="2022-04-26T20:23:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWithoutToken -->
+        <test-method status="PASS" signature="validateWithInvalidToken()[pri:4, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="validateWithInvalidToken" duration-ms="1074" started-at="2022-04-26T20:23:11 IST" description="Test case to validate error code with invalid token" finished-at="2022-04-26T20:23:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWithInvalidToken -->
+        <test-method status="PASS" signature="validateWithInvalidHeader()[pri:5, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="validateWithInvalidHeader" duration-ms="817" started-at="2022-04-26T20:23:12 IST" description="Test case to validate error code with invalid token" finished-at="2022-04-26T20:23:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWithInvalidHeader -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.restapitests.tests.Hotels_SearchTests@2286778]" name="cleanUp" is-config="true" duration-ms="2" started-at="2022-04-26T20:23:12 IST" finished-at="2022-04-26T20:23:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.restapitests.tests.Hotels_SearchTests -->
+      <class name="com.restapitests.tests.FlightsListTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="setup" is-config="true" duration-ms="3557" started-at="2022-04-26T20:23:02 IST" finished-at="2022-04-26T20:23:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateStatusCode()[pri:0, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateStatusCode" duration-ms="9" started-at="2022-04-26T20:23:06 IST" description="Test case to validate GET response status code " finished-at="2022-04-26T20:23:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusCode -->
+        <test-method status="PASS" signature="validateBaseCurrency()[pri:1, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateBaseCurrency" duration-ms="1020" started-at="2022-04-26T20:23:06 IST" description="Test case to validate Base Currency from GET Response" finished-at="2022-04-26T20:23:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBaseCurrency -->
+        <test-method status="PASS" signature="validateResponseBody()[pri:2, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateResponseBody" duration-ms="4" started-at="2022-04-26T20:23:07 IST" description="Test case to validate response body" finished-at="2022-04-26T20:23:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseBody -->
+        <test-method status="PASS" signature="validateNoOfEquivalentCurrencies()[pri:3, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateNoOfEquivalentCurrencies" duration-ms="168" started-at="2022-04-26T20:23:07 IST" description="Test case to validate Total Number of equivalent currencies" finished-at="2022-04-26T20:23:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNoOfEquivalentCurrencies -->
+        <test-method status="PASS" signature="validateStatusLine()[pri:4, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateStatusLine" duration-ms="2" started-at="2022-04-26T20:23:07 IST" description="Test case to verify Status Line Code" finished-at="2022-04-26T20:23:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateStatusLine -->
+        <test-method status="PASS" signature="validateServerName()[pri:5, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateServerName" duration-ms="3" started-at="2022-04-26T20:23:07 IST" description="Test case to verify Server Name in Header Response" finished-at="2022-04-26T20:23:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateServerName -->
+        <test-method status="PASS" signature="validateResposeTime()[pri:6, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateResposeTime" duration-ms="45" started-at="2022-04-26T20:23:07 IST" description="Test to validate Response time" finished-at="2022-04-26T20:23:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResposeTime -->
+        <test-method status="PASS" signature="validateResourceNotFound()[pri:7, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="validateResourceNotFound" duration-ms="1015" started-at="2022-04-26T20:23:07 IST" description="Test to validate 404 Error code is displayed when resource not found" finished-at="2022-04-26T20:23:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResourceNotFound -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.restapitests.tests.FlightsListTests@5383967b]" name="cleanUp" is-config="true" duration-ms="2" started-at="2022-04-26T20:23:08 IST" finished-at="2022-04-26T20:23:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.restapitests.tests.FlightsListTests -->
+    </test> <!-- Regression -->
+  </suite> <!-- Backed QA API Tests -->
+</testng-results>

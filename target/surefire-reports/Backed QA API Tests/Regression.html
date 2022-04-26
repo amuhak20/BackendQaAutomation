@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 26 20:23:02 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12831 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateNoOfEquivalentCurrencies()'><b>validateNoOfEquivalentCurrencies</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test case to validate Total Number of equivalent currencies</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsGetFaresCaledarTests.validateStatusCodes()'><b>validateStatusCodes</b><br>Test class: com.restapitests.tests.FlightsGetFaresCaledarTests<br>Test method: Validation of Status codes of Get Fares Calendar API</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsGetFaresCaledarTests@4e9ba398</td></tr>
+<tr>
+<td title='com.restapitests.tests.Hotels_SearchTests.validateStatusCodeandLine()'><b>validateStatusCodeandLine</b><br>Test class: com.restapitests.tests.Hotels_SearchTests<br>Test method: Test case to validate Status Code and Status Line</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.Hotels_SearchTests@2286778</td></tr>
+<tr>
+<td title='com.restapitests.tests.HotelsLookupTests.validateStatusCodes()'><b>validateStatusCodes</b><br>Test class: com.restapitests.tests.HotelsLookupTests<br>Test method: Test case to validate Status codes</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.HotelsLookupTests@6d7b4f4c</td></tr>
+<tr>
+<td title='com.restapitests.tests.Hotels_SearchTests.validateHeaderResp()'><b>validateHeaderResp</b><br>Test class: com.restapitests.tests.Hotels_SearchTests<br>Test method: Test case to validate Content Type and Server Name</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.Hotels_SearchTests@2286778</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateBaseCurrency()'><b>validateBaseCurrency</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test case to validate Base Currency from GET Response</td>
+<td></td>
+<td>1</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateStatusLine()'><b>validateStatusLine</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test case to verify Status Line Code</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.Hotels_SearchTests.validateRequestBody()'><b>validateRequestBody</b><br>Test class: com.restapitests.tests.Hotels_SearchTests<br>Test method: Test case to validate request body after POST Call</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.Hotels_SearchTests@2286778</td></tr>
+<tr>
+<td title='com.restapitests.tests.Hotels_SearchTests.validateWithoutToken()'><b>validateWithoutToken</b><br>Test class: com.restapitests.tests.Hotels_SearchTests<br>Test method: Test case to validate error code without token</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.Hotels_SearchTests@2286778</td></tr>
+<tr>
+<td title='com.restapitests.tests.HotelsLookupTests.validateResponseBody()'><b>validateResponseBody</b><br>Test class: com.restapitests.tests.HotelsLookupTests<br>Test method: Test case to validate response body</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.HotelsLookupTests@6d7b4f4c</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateResponseBody()'><b>validateResponseBody</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test case to validate response body</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateStatusCode()'><b>validateStatusCode</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test case to validate GET response status code </td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.Hotels_SearchTests.validateWithInvalidToken()'><b>validateWithInvalidToken</b><br>Test class: com.restapitests.tests.Hotels_SearchTests<br>Test method: Test case to validate error code with invalid token</td>
+<td></td>
+<td>1</td>
+<td>com.restapitests.tests.Hotels_SearchTests@2286778</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsGetFaresCaledarTests.validateResponseBody()'><b>validateResponseBody</b><br>Test class: com.restapitests.tests.FlightsGetFaresCaledarTests<br>Test method: Validation of Response body of Get Fares Calendar API</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsGetFaresCaledarTests@4e9ba398</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateServerName()'><b>validateServerName</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test case to verify Server Name in Header Response</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateResposeTime()'><b>validateResposeTime</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test to validate Response time</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.FlightsListTests.validateResourceNotFound()'><b>validateResourceNotFound</b><br>Test class: com.restapitests.tests.FlightsListTests<br>Test method: Test to validate 404 Error code is displayed when resource not found</td>
+<td></td>
+<td>1</td>
+<td>com.restapitests.tests.FlightsListTests@5383967b</td></tr>
+<tr>
+<td title='com.restapitests.tests.Hotels_SearchTests.validateWithInvalidHeader()'><b>validateWithInvalidHeader</b><br>Test class: com.restapitests.tests.Hotels_SearchTests<br>Test method: Test case to validate error code with invalid token</td>
+<td></td>
+<td>0</td>
+<td>com.restapitests.tests.Hotels_SearchTests@2286778</td></tr>
+</table><p>
+</body>
+</html>
