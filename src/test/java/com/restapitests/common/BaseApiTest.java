@@ -1,8 +1,10 @@
 package com.restapitests.common;
 
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -15,6 +17,9 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -62,6 +67,17 @@ public class BaseApiTest {
 		Date futureDateAfterAddingDays = c.getTime();
 		String dateAfterAddingDays = dateFormat.format(futureDateAfterAddingDays);
 		return dateAfterAddingDays;
+	}
+	
+	public RequestSpecification reqSpecification() throws FileNotFoundException {
+		reqBuilder = new RequestSpecBuilder();
+		PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
+		reqBuilder.setContentType(ContentType.JSON);
+		reqBuilder.setBaseUri(readProperties("base.uri"));
+		reqBuilder.addFilter(RequestLoggingFilter.logRequestTo(log));
+		reqBuilder.addFilter(ResponseLoggingFilter.logResponseTo(log));
+		requestSpec = reqBuilder.build();
+		return requestSpec;
 	}
 
 }

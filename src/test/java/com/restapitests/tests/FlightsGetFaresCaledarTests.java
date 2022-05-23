@@ -1,5 +1,9 @@
 package com.restapitests.tests;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -12,6 +16,7 @@ import com.restapitests.common.RestExecutor;
 import com.restapitests.utilities.RequestBody;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.http.ContentType;
 
 public class FlightsGetFaresCaledarTests extends BaseApiTest {
@@ -19,15 +24,10 @@ public class FlightsGetFaresCaledarTests extends BaseApiTest {
 	JsonObject jsonBody;
 
 	@BeforeClass(alwaysRun = true)
-	public void setup() {
+	public void setup() throws FileNotFoundException {
 		logger = Logger.getLogger(FlightsGetFaresCaledarTests.class);
 		logger.info("************************************************...");
 		logger.info("Executing Get Fares Calendar API Tests started...");
-		reqBuilder = new RequestSpecBuilder();
-
-		reqBuilder.setContentType(ContentType.JSON);
-		reqBuilder.setBaseUri(readProperties("base.uri"));
-		requestSpec = reqBuilder.build();
 		
 		logger.info("Getting Departure From date by adding 30 days to current date...");
 		String getDateAddingMonth = getFutureDateAddingDays(30);
@@ -39,7 +39,7 @@ public class FlightsGetFaresCaledarTests extends BaseApiTest {
 
 		jsonBody = convertToJson(
 				RequestBody.getRequestBodyGetFaresCalendar(getDateAddingMonth, getDateAddingMonthTowDays));
-		resp = RestExecutor.executePost("/v3/flights/flight/get-fares-calender", jsonBody, requestSpec);
+		resp = RestExecutor.executePost("/v3/flights/flight/get-fares-calender", jsonBody, reqSpecification());
 
 	}
 

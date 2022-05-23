@@ -13,23 +13,20 @@ import io.restassured.response.Response;
 
 import static org.hamcrest.Matchers.*;
 
+import java.io.FileNotFoundException;
+
 import org.apache.log4j.Logger;
 import org.hamcrest.Matchers;
 
 public class FlightsListTests extends BaseApiTest {
 
 	@BeforeClass(alwaysRun = true)
-	public void setup() {
+	public void setup() throws FileNotFoundException {
 		logger = Logger.getLogger(FlightsListTests.class);
 		logger.info("************************************************");
 		logger.info("Executing Flights Lists API Tests started...");
-		reqBuilder = new RequestSpecBuilder();
 
-		reqBuilder.setContentType(ContentType.JSON);
-		reqBuilder.setBaseUri(readProperties("base.uri"));
-		requestSpec = reqBuilder.build();
-
-		resp = RestExecutor.executeGet("/system/currency/list", requestSpec);
+		resp = RestExecutor.executeGet("/system/currency/list", reqSpecification());
 
 	}
 
